@@ -1,0 +1,128 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    android:id="@+id/game_container"
+    android:animateLayoutChanges="true">
+
+    <fragment
+        android:name="com.example.marci.topcars.PlayerFragment"
+        android:id="@+id/fragment_player_1"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_player"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Score" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="0"
+                    android:id="@+id/player_score"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#7FB664"
+                    android:layout_marginTop="20dp"
+                    android:text="+344"
+                    android:alpha="0"
+                    android:id="@+id/player_add_score" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Streak" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/player_streak" />
+
+        <Button
+            android:id="@+id/next_round"
+            android:text="Next"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:onClick="buttonClick"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/new_game"
+            android:text="New Game"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:onClick="buttonClick"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <fragment
+        android:name="com.example.marci.topcars.PlayerFragment"
+        android:id="@+id/fragment_player_2"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_player" />
+
+</LinearLayout>

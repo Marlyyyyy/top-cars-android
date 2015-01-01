@@ -1,0 +1,86 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_title"/>
+
+     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:context=".MainActivity"
+            tools:ignore="MergeRootFrame"
+            android:weightSum="8"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/main_tile_01_click"/>
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/main_tile_03_click"/>
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/main_tile_02_click"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:context=".MainActivity"
+            tools:ignore="MergeRootFrame"
+            android:weightSum="8"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:onClick="buttonClick"
+                android:layout_weight="2"
+                android:src="@drawable/main_tile_01"
+                android:id="@+id/launch_game"/>
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:onClick="buttonClick"
+                android:layout_weight="2"
+                android:src="@drawable/main_tile_03"
+                android:id="@+id/launch_cars"/>
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:onClick="buttonClick"
+                android:layout_weight="2"
+                android:src="@drawable/main_tile_02"
+                android:id="@+id/launch_stats"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

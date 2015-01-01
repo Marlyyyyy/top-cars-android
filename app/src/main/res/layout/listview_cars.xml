@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_margin="10dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cars_image"
+        android:baselineAlignBottom="false"
+        android:src="@drawable/ic_launcher"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/cars_name"
+            android:gravity="center_horizontal"
+            android:text="Ferrari 360 Spider"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/cars_speed"
+            android:gravity="center_horizontal"
+            android:text="280"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/cars_acceleration"
+            android:gravity="center_horizontal"
+            android:text="350"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/cars_power"
+            android:gravity="center_horizontal"
+            android:text="350"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/cars_torque"
+            android:gravity="center_horizontal"
+            android:text="420"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/cars_weight"
+            android:gravity="center_horizontal"
+            android:text="1400"/>
+    </LinearLayout>
+
+
+</LinearLayout>

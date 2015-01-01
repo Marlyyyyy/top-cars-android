@@ -1,0 +1,236 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_border"
+    android:id="@+id/p_card"
+    android:visibility="invisible">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Ferrari 360 Spider"
+        android:id="@+id/p_card_name"
+        android:gravity="center"
+        android:textSize="12dp"
+        />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/p_card_image"
+        android:src="@drawable/gemballaavalanchegtr600"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/p_card_speed_layout"
+        android:onClick="fieldClick"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Top Speed:"
+            android:layout_weight="4"
+            android:gravity="left"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="280"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:id="@+id/p_card_speed_text"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="km/h"
+            android:layout_weight="2"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/p_card_power_layout"
+        android:onClick="fieldClick"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Power:"
+            android:layout_weight="4"
+            android:gravity="left"/>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="350"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:id="@+id/p_card_power_text"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="hp"
+            android:layout_weight="2"
+            android:gravity="right"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/p_card_torque_layout"
+        android:onClick="fieldClick"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Torque:"
+            android:layout_weight="4"
+            android:gravity="left"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="420"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:id="@+id/p_card_torque_text"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nm"
+            android:layout_weight="2"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/p_card_acceleration_layout"
+        android:onClick="fieldClick"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0-100 km/h:"
+            android:layout_weight="4"
+            android:gravity="left"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:id="@+id/p_card_acceleration_text"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="s"
+            android:layout_weight="2"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/p_card_weight_layout"
+        android:onClick="fieldClick"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Weight:"
+            android:layout_weight="4"
+            android:gravity="left"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1400"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:id="@+id/p_card_weight_text"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:layout_weight="2"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
